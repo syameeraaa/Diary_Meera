@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>𐙚 Home Page 𐙚</title>
+  </head>
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+  
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Full-page video background */
+      .video-background {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        z-index: -1; 
+      }
+    </style>
+  
+  <body>
+    <!-- Video background -->
+    <video class="video-background" autoplay loop muted>
+      <source src="video/background video homepage.mp4" type="video/mp4">
+    </video>
+
+    <!-- Top navigation bar -->
+    <link rel="stylesheet" href="style.css">
+    <div class="topnav">
+      <a class="active" href="index.html" accesskey="p">Home</a>
+      <a href="biodata.html" target="_blank" accesskey="h">About Me</a>
+      <a href="family.html" target="_blank" accesskey="k">My Family</a>
+      <a href="holiday.html" target="_blank" accesskey="r">Vacation</a>
+      <a href="my_friend.html" target="_blank" accesskey="b">My Best Mate</a>
+      <a href="video_gallery.html" target="_blank" accesskey="v">Video Collection</a>
+    </div>
+
+    <div style="font-family: Arial, sans-serif; background-color: #ffe6f2; padding: 10px; border-radius: 8px; text-align: center; width: 180px; position: fixed; top: 70px; right: 20px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);">
+      <h3 style="color: #ff3399; margin-bottom: 8px; font-size: 15px;">Date & Time</h3>
+      <p id="datetime" style="color: #cc0066; font-size: 13px; font-weight: bold; margin: 0;"></p>
+    </div>
+    
+    <script>
+      function updateDateTime() {
+        const now = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        document.getElementById('datetime').textContent = `${now.toLocaleDateString('en-US', options)} - ${time}`;
+      }
+      setInterval(updateDateTime, 1000);
+      updateDateTime();
+    </script>
+    
+    <!-- Profile picture -->
+    <link rel="stylesheet" href="style.css">
+    <div class="circle-image">
+      <img src="image/photo_2024-11-12_15-10-57.jpg" alt="Profile Picture">
+    </div>
+
+    <!-- Welcome message -->
+    <link rel="stylesheet" href="style.css">
+    <h2>Hai, Meera Here!</h2>
+    <p style="font-family: 'Pacifico', cursive; font-size: 1.3em; text-align: center; color: #6a1b9a; margin: 20px; line-height: 1.6;">
+      Hi, I'm Nur Syameera, a student of Information Management in UiTM Rembau.<br>
+      Welcome to my personal website, where I share a bit about my life, my family, friend and dreams.
+    </p>
+
+    <!-- Horizontal line -->
+    <hr size="5" color="Purple" width="65%">
+
+    <!-- Navigation buttons -->
+    <link rel="stylesheet" href="style.css">
+    <nav>
+      <ul>
+        <li><a href="index.html" target="_blank"><img src="image/button discover me.png" style="width: 160px; height: 60px;" alt="Discover Me"></a></li>
+        <li><a href="family.html" target="_self"><img src="image/button my beloveds.png" style="width: 170px; height: 60px;" alt="My Beloveds"></a></li>
+        <li><a href="holiday.html" target="_blank"><img src="image/button road trip.png" style="width: 150px; height: 60px;" alt="Road Trip"></a></li>
+        <li><a href="my_friend.html" target="_blank"><img src="image/button my buddy.png" style="width: 150px; height: 60px;" alt="My Buddy"></a></li>
+        <li><a href="video_gallery.html" target="_self"><img src="image/button video gallery.png" style="width: 170px; height: 60px;" alt="Video Gallery"></a></li>
+      </ul>
+    </nav>
+  
+    <link rel="stylesheet" href="style.css">
+    <div class="callout">
+      <div class="callout-header">
+        Keyboard Shortcuts
+        <button class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">×</button>
+      </div>
+      <div class="callout-container">
+        <p><strong>Press</strong> <strong>Alt + D</strong> to go to the <strong>About Me</strong> page.</p>
+        <p><strong>Press</strong> <strong>Alt + K</strong> to go to the <strong>My Family</strong> page.</p>
+        <p><strong>Press</strong> <strong>Alt + R</strong> to go to the <strong>Holiday</strong> page.</p>
+        <p><strong>Press</strong> <strong>Alt + B</strong> to go to the <strong>My Best Mate</strong> page.</p>
+        <p><strong>Press</strong> <strong>Alt + V</strong> to go to the <strong>Video Collection</strong> page.</p>
+      </div>
+    </div>
+    
+    <!-- Social media links -->
+    <link rel="stylesheet" href="style.css">
+    <div class="social-media-icons">
+      <a href="https://www.tiktok.com/@hdjsnsjx_?_t=8rLhCIPwBSK&_r=1"><img src="image/tiktok logo.png" alt="TikTok"></a>
+      <a href="https://www.instagram.com/meerafz?igsh=MjBidjVxejlkdG11"><img src="image/instagram.png" alt="Instagram" style="width: 110px;"></a>
+      <a href="mailto:syameeraaaa12@gmail.com"><img src="image/gmail.png" alt="Gmail" style="width: 70px;"></a>
+      <a href="https://www.facebook.com/share/19Mt2DnegN/"><img src="image/facebook.png" alt="Facebook"></a>
+    </div>
+    
+  </body>
+</html>
