@@ -1,20 +1,42 @@
 <html>
   <head>
-    <title>𐙚 Friendship 𐙚</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>⭑.ᐟ Friend ⛇☃︎ </title>
   </head>
 
   <style>
-
-    body
-      {
-        background-image: url(image/background\ home.jpeg);
-      }
-
-</style>
-</body>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  
+    /* Full-page video background */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      z-index: -1; 
+    }
+  
+    /* Content styling for visibility */
+    .content {
+      position: relative; 
+      z-index: 1; 
+      color: white; 
+      text-align: center; 
+      font-family: Arial, sans-serif; 
+      padding: 20px;
+    }
+  </style>
+  
+  <video class="video-background" autoplay loop muted>
+    <source src="video/background video friend.mp4"video/mp4">
+  </video>
+  
   <style>
   body {
     margin: 0;
@@ -45,152 +67,947 @@
     color: white;
   }
   </style>
-  </head>
+
   <body>
-  
   <div class="topnav">
-    <a class="active" href="home_site.html">Home</a>
-    <a href="biodata.html" target="_blank" >Biodata</a>
-    <a href="my_friend.html" target="_blank" >My Family</a>
-    <a href="holiday.html" target="_blank" >Vacation</a>
-    <a href="my_friend.html" target="_blank" >My Best Mate</a>
-    <a href="fav_thing&person.html" target="_blank" >Top Pick & Love</a>
+    <a class="active" href="index.html"accesskey="p">Home</a>
+    <a href="biodata.html" target="_blank" accesskey="h">Biodata</a>
+    <a href="family.html" target="_blank" accesskey="k">My Family</a>
+    <a href="holiday.html" target="_blank" accesskey="r">Vacation</a>
+    <a href="my_friend.html" target="_blank" accesskey="b">My Best Mate</a>
+    <a href="video_gallery.html" target="_blank" accesskey="v">Video Collection</a>
   </div>
   
-  <div style="padding-left:16px">
-    <h2>A Warm Welcome to You!</h2>
-    <p>I’m so glad you’re here! This website is all about sharing who I am, what I do, and what inspires me. Whether you’re curious about
-      my work, my journey, or just want to learn a bit more about me, I hope you find something interesting and meaningful here.I created
-      this site to show you a little of my world. You’ll find updates on my projects, my interests, and the things I’m passionate about.
-      It’s a place where you can see what drives me and keeps me going. Take a look around, explore what’s here, and feel free to reach 
-      out if anything catches your eye. Thank you for visiting, and I hope you enjoy your time here!
-      </p>
-  </div>
+ <div style="
+    position: relative; 
+    text-align: center; 
+    font-family: 'Georgia', serif; 
+    font-size: 3.5rem; 
+    color: #FFFFFF; 
+    padding: 20px; 
   
-  </body>
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+    
+    <div style="
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        background: url('image/test\ gmbr\ text\ friend.jpg') no-repeat center; 
+        background-size: cover; 
+        opacity: 0.8; 
+        z-index: -1;">
+    </div>
+    𓍢ִ໋🌷͙֒ᰔ Moments with Friends ⋆.˚🦋༘⋆
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p>
-  <center><font color="#bd1a6b"><h2>A Warm Welcome to You!</h2>
-</p>
-
-<div align="center">
-<hr size="5" color="Purple" width="20%">
-<text-justify: inter-word;
-
-  
-</text-justify:><font color="#8c4575"><p style=text-align:justify;"> 
-  I’m so glad you’re here! This website is all about sharing who I am, what I do, and what inspires me. Whether you’re curious about
-  my work, my journey, or just want to learn a bit more about me, I hope you find something interesting and meaningful here.I created
-  this site to show you a little of my world. You’ll find updates on my projects, my interests, and the things I’m passionate about.
-  It’s a place where you can see what drives me and keeps me going. Take a look around, explore what’s here, and feel free to reach 
-  out if anything catches your eye. Thank you for visiting, and I hope you enjoy your time here!
-  
-</p>
+      <!-- Display Last Updated Time -->
+<div id="lastUpdated" style="text-align: right; font-family: Arial, sans-serif; padding: 5px; color: #4a4a4a; font-size: 0.9em;">
+  <span style="font-weight: bold; color: #ae416d; padding: 2px 4px; border-bottom: 2px solid #ae416d;">
+    Last Updated:
+  </span>
+  <span id="updateTime" style="color: #000000; padding: 2px 4px; font-style: italic;"></span>
 </div>
 
-<section>
-<nav>
-<ul>
-<p>
-            
-  <!--Using images as hyperlink, local link-->
-  <li><a href="biodata.html" target="_blank"><img src="image/button getting to know me.png"></li>
-  <li><a href="family.html"target="_self"><img src="image/button my family.png"></li>
-  <li><a href="holiday.html"target="_blank"><img src="image/button vacation time.png"></li>
-  <li><a href="my_friend.html"target="_blank"><img src="image/button my best mate.png"></li>
-  <li><a href="fav_thing&person.html"target="_self"><img src="image/button my top pick and love.png"></li>
+<script>
+  // Format and display the last updated time
+  function formatLastUpdated() {
+    const lastModified = new Date(document.lastModified);
+    const options = { 
+      weekday: 'short', 
+      month: 'short', 
+      day: 'numeric', 
+      year: 'numeric', 
+      hour: '2-digit', 
+      minute: '2-digit' 
+    };
+    return lastModified.toLocaleDateString('en-US', options);
+  }
 
+  // Set the formatted date and time
+  document.getElementById('updateTime').textContent = formatLastUpdated();
+</script>
+
+
+    <div style="background-color: #e8d0ab; padding: 20px; margin: 20px auto; max-width: 100%; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+      <!-- Main Section with Image and Title below -->
+      <div style="display: flex; align-items: center; max-width: 900px; margin: 0 auto;">
+        
+      <!-- Image Section (Adjusted Size) -->
+<div style="width: 350px; height: 300px; border: 5px solid #965237; border-radius: 180px 180px 0 0; overflow: hidden;">
+  <img src="image/the three of us.jpg" 
+       style="width: 100%; height: 100%; object-fit: cover;">
+</div>
+
+
+        <!-- Text Section -->
+        <div style="width: 80%; padding-left: 15px;"> <!-- Reduced padding-left to close the gap -->
+          <h1 style="font-family: 'Georgia', serif; font-size: 2.5rem; color: #880E4F; text-shadow: 1px 1px 2px #F48FB1;">
+            Nasuha and Aishah
+          </h1>
+          <p style="font-family: 'Arial', sans-serif; font-size: 15px; line-height: 1.8; text-align: justify; color: #4E342E;">
+            Since primary school, I’ve been blessed with two amazing friends who’ve been by my side through everything. It all started with 
+            us sharing snacks and playing during recess, and over the years, our bond has only grown stronger. We’ve celebrated each other’s 
+            successes, helped each other through tough times, and created a space where we can be our true selves. After SPM, we went to 
+            different universities, but that didn’t change anything. We’ve always managed to stay close, making time to meet up whenever 
+            we can, sharing stories, and just catching up like no time has passed. They’re my constant source of joy, laughter, and support, 
+            and I’m so grateful to have them in my life.
+          </p>
+        </div>
+      </div>
+
+      <!-- Centered Images as Hyperlinks Below the Text -->
+      <div style="text-align: center; margin-top: 20px;">
+      </p>
+
+        <p>
+          <!-- Using images as hyperlinks with adjusted size -->
+          <a href="image/my friend nasuha.jpg" target="_blank">
+            <img src="image/button friend nasuha.png" style="width: 120px; margin-right: 15px;">
+          </a>
+          <a href="image/my friend nasuha and aishah.jpg" target="_self">
+            <img src="image/button friend aishah.png" style="width: 120px;">
+          </a>
+        </p>
+
+      </p>
+      <!-- Adding text below the images -->
+      <p style="font-family: 'Arial', sans-serif; font-size: 14px; color: #4E342E; margin-top: 10px;">
+        Click on the images button to learn more about Nasuha and Aishah.
+      </p>
+      </div>
+    </div>
+
+    <style>
+      /* Gallery container */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 25px; 
+        padding: 20px; 
+        max-width: 90%; 
+        margin: 0 auto;
+        background-color: rgba(227, 161, 107, 0.727); 
+        border-radius: 15px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+      }
+    
+      /* Styling for each image container */
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        width: 100%; 
+        aspect-ratio: 1 / 1; 
+        background-color: rgba(198, 170, 119, 0.77);
+        padding: 5px; 
+      }
+    
+      /* Image styling */
+      .gallery-item img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        border-radius: 8px; 
+        transition: transform 0.3s ease, opacity 0.3s ease; 
+      }
+    
+      /* Hover effect */
+      .gallery-item:hover img {
+        transform: scale(1.05); 
+        opacity: 0.95; 
+      }
+    </style>
+    
+    <!-- Gallery Section -->
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="image/nasuha and aishah.jpg">
+      </div>
+      <div class="gallery-item">
+        <img src="image/three of us.jpg">
+      </div>
+      <div class="gallery-item">
+        <img src="image/with nasuha.jpg">
+      </div>
+    </div>
+
+    <style>
+      /* Full-width section background */
+      .section-background {
+        background-color: rgba(189, 132, 26, 0.303); 
+        padding: 30px 0; 
+        width: 100%; 
+      }
+    
+      /* Center content container */
+      .content {
+        display: flex; 
+        align-items: flex-start; 
+        justify-content: center; 
+        gap: 30px; 
+        max-width: 80%;
+        margin: 0 auto; 
+      }
+    
+      /* Styling for the title */
+      h2 {
+        font-family: "Brush Script MT", "Segoe Script", "Comic Sans MS", cursive; 
+        font-size: 3.5rem; 
+        color: #582528; 
+        line-height: 1.2; 
+        margin: 0; 
+        text-align: center; 
+        letter-spacing: 1px; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+        margin-top: 60px; 
+      }
+    
+      /* Styling for the list container */
+      .list-container {
+        padding: 20px; 
+        border: 3px solid #bd1a6b; 
+        border-radius: 10px; 
+        background-color: rgba(255, 223, 186, 0.8); 
+        width: 45%; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.082); 
+      }
+    
+      /* Styling for the list */
+      ul {
+        list-style: none;
+        padding: 0; 
+        margin: 0; 
+      }
+    
+      /* Styling for each list item */
+      ul li {
+        margin-bottom: 10px;
+        font-family: "Arial", sans-serif; 
+        font-size: 1.2rem; 
+        color: #333; 
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: justify; 
+      }
+    
+      /* Adding custom list-style image */
+      ul li::before {
+        content: url('image/button flower friend.png'); 
+        display: inline-block;
+        margin-right: 10px; 
+      }
+    </style>
+    
+    <div class="section-background">
+      <div class="content">
+        <!-- Title -->
+        <h2>
+          Activities<br>
+          That Bond<br>
+          Us Together
+        </h2>
+    
+        <!-- List with a single border -->
+        <div class="list-container">
+          <ul>
+            <li>Watching your favorite movies or TV shows together.</li>
+            <li>Discovering new places to enjoy tea, coffee, and desserts.</li>
+            <li>Simply chatting and laughing for hours at a cozy spot or your favorite hangout place.</li>
+            <li>Singing karaoke or discovering new songs and artists.</li>
+            <li>Pick a serene spot and relax while enjoying nature's beauty and good conversation.</li>
+            <li>Pack some snacks, a blanket, and games for a relaxing day outdoors.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      body {
+        font-family: "Georgia", serif;
+        background-color: #f7e9d3; 
+        color: #5a3921; 
+        margin: 0;
+        padding: 0;
+      }
+    
+      h1 {
+        font-size: 2.5rem;
+        color: #8b5e3c; 
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    
+      .container {
+        max-width: 80%;
+        margin: 0 auto;
+        overflow: hidden; 
+      }
+    
+      /* Image container to float the image to the right */
+      .image-container {
+        float: right;
+        margin-left: 50px; 
+        margin-top: 20px;
+        position: relative;
+        display: inline-block;
+        perspective: 1500px; 
+      }
+    
+      /* 3D Cube effect for the image */
+      .image-cube {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: rotateCube 6s infinite linear; 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+      }
+    
+      /* 3D Cube Faces */
+      .image-cube .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        border: 5px solid #b88c6a; 
+        border-radius: 10px;
+      }
+    
+      .image-cube .front {
+        transform: rotateY(  0deg) translateZ(150px); 
+        background-image: url('image/my\ housemate.jpg');
+      }
+    
+      .image-cube .back {
+        transform: rotateY(180deg) translateZ(150px); 
+        background-image: url('image/ismahani.jpg');
+      }
+    
+      .image-cube .left {
+        transform: rotateY(-90deg) translateZ(150px); 
+        background-image: url('image/My\ Hpusemate.jpg');
+      }
+    
+      .image-cube .right {
+        transform: rotateY(90deg) translateZ(150px); 
+        background-image: url('image/my\ housemate\ 2.jpg');
+      }
+    
+      .image-cube .top {
+        transform: rotateX(90deg) translateZ(150px); 
+        background-image: url('image/photo_2024-11-12_23-15-22.jpg');
+      }
+    
+      .image-cube .bottom {
+        transform: rotateX(-90deg) translateZ(150px); 
+        background-image: url('image/photo_2024-11-12_23-15-31.jpg');
+        border: 5px solid #8b5e3c;
+        box-sizing: border-box;
+      }
+    
+      /* Animation for rotating the cube */
+      @keyframes rotateCube {
+        0% {
+          transform: rotateY(0deg);
+        }
+        100% {
+          transform: rotateY(360deg);
+        }
+      }
+    
+      /* Text box styling */
+      .text-box {
+        display: inline-block; 
+        background-color: rgba(206, 193, 173, 0.9); 
+        padding: 20px;
+        border-radius: 2px;
+        border: 3px solid #8b5e3c; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        width: 55%; 
+        margin-top: 10px;
+      }
+    
+      /* Text paragraph style */
+      .text-box p {
+        text-align: justify; 
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin: 0;
+      }
+    </style>
+    
+    <div class="container">
+      <h1>My Housemates</h1>
+      
+      <!-- Image Container with 3D Cube Effect -->
+      <div class="image-container">
+        <div class="image-cube">
+          <!-- Each face of the cube -->
+          <div class="face front"></div>
+          <div class="face back"></div>
+          <div class="face left"></div>
+          <div class="face right"></div>
+          <div class="face top"></div>
+          <div class="face bottom"></div>
+        </div>
+      </div>
+    
+      <!-- Text Box with Reduced Width -->
+      <div class="text-box">
+        <p>
+          It’s crazy to think that we were just classmates before last semester, and now we’re housemates. It was only in Semester 5 that we 
+          decided to live together, and that’s when everything changed. We got so much closer, started really getting to know each other, 
+          and built this special bond. This semester, we’re practically inseparable we do everything together! Whether it’s working on 
+          assignments, going to class, or grabbing food, we’re always by each other’s side. Being with them has taught me something important
+          having a small circle isn’t boring at all. In fact, it’s the opposite. A small group of true friends brings so much more value and 
+          comfort than having a big group. It’s all about quality over quantity, and I wouldn’t trade this for anything.
+        </p>
+      </div>
+    </div>
+    
+    <style>
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #e3c3ac;
+          margin: 0;
+          padding: 0;
+      }
+    
+      .container {
+          max-width: 1000px;
+          margin: 30px auto;
+          padding: 15px;
+          text-align: center;
+      }
+    
+      h1 {
+          font-size: 42px;
+          color: #6f4f29;
+          margin-bottom: 20px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          font-style: italic;
+          border-bottom: 3px dashed #d9a94b;
+          padding-bottom: 10px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+    
+      .housemate-info {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin-bottom: 20px;
+          background-color: rgba(255, 255, 255, 0.9);
+          border-radius: 10px;
+          padding: 20px; 
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+          overflow: hidden;
+      }
+    
+      .housemate-info:hover {
+          transform: scale(1.02);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+    
+      .housemate-avatar {
+          width: 160px; 
+          height: 160px; 
+          border-radius: 50%;
+          margin-bottom: 15px;
+          border: 3px solid #d9a94b; 
+          background-color: #eed5b368;
+          box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    
+      .housemate-avatar:hover {
+          border-color: #6f4f29;
+      }
+    
+      .housemate-details {
+          background-color: #f0c08d37;
+          padding: 15px;
+          border-radius: 8px;
+          width: 85%; 
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+          text-align: left;
+          position: relative;
+      }
+    
+      .housemate-details::before {
+          content: '';
+          position: absolute;
+          top: -8px;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background-color: #d9a94b;
+          border-radius: 8px 8px 0 0;
+      }
+    
+      .housemate-name {
+          font-size: 20px;
+          font-weight: bold;
+          color: #6f4f29;
+          margin-bottom: 5px;
+      }
+    
+      .housemate-age,
+      .housemate-address,
+      .housemate-fun-fact,
+      .housemate-personality,
+      .housemate-special {
+          font-size: 14px;
+          color: #555;
+          margin-bottom: 8px;
+          line-height: 1.5;
+      }
+    
+      @media screen and (min-width: 768px) {
+          .housemate-info {
+              flex-direction: row;
+          }
+    
+          .housemate-avatar {
+              margin-right: 20px;
+              margin-bottom: 0;
+          }
+    
+          .housemate-details {
+              width: 70%;
+          }
+      }
+    </style>
+    
+    <div class="container">
+        <h1>𝑀𝐸𝐸𝒯 𝑀𝒴 𝐻𝒪𝒰𝒮𝑀𝒜𝒯𝐸</h1>
+    
+        <div class="housemate-info">
+            <img class="housemate-avatar" src="image/alieya.jpg">
+            <div class="housemate-details">
+                <div class="housemate-name">Alieya Maisara</div>
+                <div class="housemate-age">Age: 21</div>
+                <div class="housemate-address">Address: Semenyih, Selangor</div>
+                <div class="housemate-fun-fact">Fun Fact: Loves collecting rare plants!</div>
+                <div class="housemate-personality">Personality: Outgoing, always cheerful, and a great cook!</div>
+                <div class="housemate-special">What Makes Them Special: Alieya has an incredible talent for making everyone feel welcome and at home. His positivity is contagious.</div>
+            </div>
+        </div>
+    
+        <div class="housemate-info">
+            <img class="housemate-avatar" src="image/isma.jpg">
+            <div class="housemate-details">
+                <div class="housemate-name">Nur Ismahani</div>
+                <div class="housemate-age">Age: 21</div>
+                <div class="housemate-address">Address: Nilai, Negeri Sembilan</div>
+                <div class="housemate-fun-fact">Fun Fact: Pro in using Adobe Premium</div>
+                <div class="housemate-personality">Personality: Quiet, thoughtful, and loves reading books.</div>
+                <div class="housemate-special">What Makes Them Special: Isma has a calming presence and is always there to listen when someone needs advice or a chat.</div>
+            </div>
+        </div>
+    
+        <div class="housemate-info">
+            <img class="housemate-avatar" src="image/zarith.jpg">
+            <div class="housemate-details">
+                <div class="housemate-name">Puteri Zarith</div>
+                <div class="housemate-age">Age: 21</div>
+                <div class="housemate-address">Address: Kajang, Selangor</div>
+                <div class="housemate-fun-fact">Fun Fact: Obsessed with photography and capturing nature!</div>
+                <div class="housemate-personality">Personality: Creative, energetic, and always up for an adventure.</div>
+                <div class="housemate-special">What Makes Them Special: Zarith has an amazing eye for detail and can make even ordinary moments look extraordinary through her photography.</div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+      /* General Body Styling */
+      body {
+        font-family: 'Roboto', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff; 
+        color: #2c3e50;
+      }
+    
+      /* Refined Header Styling */
+      .classmate-header {
+        text-align: center;
+        margin: 30px auto;
+        font-size: 36px;
+        font-weight: bold;
+        color: #6e4912; 
+        text-transform: uppercase; 
+        letter-spacing: 2px; 
+        position: relative;
+        padding: 10px 20px;
+      }
+    
+      .classmate-header::before,
+      .classmate-header::after {
+        content: "";
+        position: absolute;
+        width: 80px; 
+        height: 3px; 
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    
+      .classmate-header::before {
+        left: 0;
+      }
+    
+      .classmate-header::after {
+        right: 0;
+      }
+    
+      /* Gallery Container */
+      .image-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+    
+      .image-gallery a {
+        display: block;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      .image-gallery a:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    
+      .image-gallery img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+    
+      .image-gallery img:hover {
+        transform: scale(1.1);
+      }
+    
+      .image-gallery a::after {
+        content: attr(data-title);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        text-align: center;
+        padding: 8px 0;
+        font-size: 14px;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+    
+      .image-gallery a:hover::after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+    
+    <h2 class="classmate-header">My Classmates CDIM110</h2>
+    <div class="image-gallery">
+      <a href="image/classmate.JPG" data-title="Semester 1">
+        <img src="image/classmate photo.jpg">
+      </a>
+      <a href="image/classmate photo 3.jpg" data-title="Semester 2">
+        <img src="image/classmate photo 3.jpg">
+      </a>
+      <a href="image/classmate photo 2.jpg" data-title="Semester 3">
+        <img src="image/classmate photo 2.jpg">
+      </a>
+    </div>
+
+    <style>
+      table {
+          width: 60%; /* Reduced table width */
+          border: 2px solid black;
+          border-collapse: collapse;
+          text-align: center;
+          margin: 20px auto;
+          background-image: url('image/brown\ mix.jpg'); 
+          background-size: cover;
+          background-position: center;
+      }
+  
+      caption {
+          font-weight: bold;
+          font-size: 18px;
+          margin-bottom: 10px;
+          color: #9d7b7b; 
+      }
+  
+      td {
+          border: 2px solid black;
+          padding: 8px; 
+          color: #f0dcdccd; 
+      }
+  
+      .song-table {
+          width: 100%;
+          border: 1px solid #ddd;
+          margin: 5px 0;
+      }
+  
+      .song-table td {
+          border: none;
+          padding: 5px;
+          text-align: left;
+          background-color: rgba(124, 124, 124, 0.5); 
+      }
+  
+      /* Adjust image size and height to fit smaller tables */
+      .image-cell {
+          width: 100%;
+          height: 150px; 
+          overflow: hidden;
+      }
+  
+      .image-cell img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: 2px solid black;
+      }
+  </style>
+  
+  <table>
+      <caption>Table 1: This is a Classmate Corner table</caption>
+      <tr>
+          <td colspan="4" class="image-cell">
+              <img src="image/classmate.JPG">
+          </td>
+      </tr>
+      <tr style="background-color: #bc9f69c3; font-weight: bold;">
+          <td>Name</td>
+          <td>Hometown</td>
+          <td>Favorite Color</td>
+          <td>Favorite Songs</td>
+      </tr>
+      <tr>
+          <td>Adlina</td>
+          <td>Kuala Lumpur</td>
+          <td>Blue</td>
+          <td>
+              <table class="song-table">
+                  <tr><td>1. Perfect by Ed Sheeran</td></tr>
+                  <tr><td>2. Someone Like You by Adele</td></tr>
+              </table>
+          </td>
+      </tr>
+      <tr>
+          <td>Nurien</td>
+          <td>Klang</td>
+          <td>Green</td>
+          <td>
+              <table class="song-table">
+                  <tr><td>1. Blinding Lights by The Weeknd</td></tr>
+                  <tr><td>2. Stay by Rihanna</td></tr>
+              </table>
+          </td>
+      </tr>
+      <tr>
+          <td>Athirah</td>
+          <td>Kajang</td>
+          <td>Red</td>
+          <td>
+              <table class="song-table">
+                  <tr><td>1. Let It Be by The Beatles</td></tr>
+                  <tr><td>2. Shape of You by Ed Sheeran</td></tr>
+              </table>
+          </td>
+      </tr>
+      <tr>
+          <td>Hanim</td>
+          <td>Seremban</td>
+          <td>Red</td>
+          <td>
+              <table class="song-table">
+                  <tr><td>1. Please Please Please by Sabrina Carpenter</td></tr>
+                  <tr><td>2. Tak Ingin Usai by Keisya Levronka</td></tr>
+              </table>
+          </td>
+      </tr>
+      <tr>
+          <td>Sara</td>
+          <td>Bangi</td>
+          <td>Red</td>
+          <td>
+              <table class="song-table">
+                  <tr><td>1. Penjaga Hati by Nadhif Basalamah</td></tr>
+                  <tr><td>2. Rumah Singgah by Fabio Asher</td></tr>
+              </table>
+          </td>
+      </tr>
+      <tr>
+          <td>Wan Nurin</td>
+          <td>Kuala Lumpur</td>
+          <td>Red</td>
+          <td>
+              <table class="song-table">
+                  <tr><td>1. The Gretest by Billie Eilish</td></tr>
+                  <tr><td>2. Ordinary Things  by Ariana Grande</td></tr>
+              </table>
+          </td>
+      </tr>
+  </table>
+
+  <style>
+    /* Simple Message Design with Transparent Border */
+    .classmate-message {
+      font-family: 'Poppins', Arial, sans-serif; 
+      color: #2c3e50; 
+      padding: 15px; 
+      margin: 20px auto;
+      width: 80%; 
+      text-align: center; 
+      background-color: #a56b2c37;
+      border: 2px solid rgba(0, 0, 0, 0.1); 
+      border-radius: 8px; 
+    }
+  
+    /* Header Styling */
+    .classmate-message h2 {
+      font-size: 26px; 
+      font-weight: 500; 
+      color: #ed7a28; 
+      font-family: 'Lora', serif; 
+    }
+  
+    /* Paragraph Styling */
+    .classmate-message p {
+      font-size: 16px; 
+      line-height: 1.6; 
+      color: #34495e; 
+    }
+  </style>
+  
+  <div class="classmate-message">
+    <h2>To My Amazing Classmates</h2>
+    <p>As we near the end of our journey together, I just want to say how proud I am of all of us for making it this far. 
+      Thank you for the memories, support, and laughs we’ve shared, whether it was during group projects or just chatting in class. 
+      Let’s keep supporting each other and finish strong—I believe in every one of us.</p>
+  </div>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f0f0f0; 
+    }
+  
+    .callout {
+      position: fixed;
+      bottom: 15px; /* Reduced bottom space */
+      right: 15px; /* Reduced right space */
+      max-width: 220px; /* Reduced max-width */
+      background-color: #ffffff; /* White background */
+      border: 1px solid #ccc; /* Light grey border */
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+    }
+  
+    .callout-header {
+      background-color: #514d4d; /* Dark grey header */
+      color: white;
+      padding: 10px; /* Reduced padding */
+      font-size: 14px; /* Smaller font size */
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid #ccc; /* Light grey border at the bottom */
+    }
+  
+    .callout-container {
+      padding: 10px; /* Reduced padding */
+      background-color: #fafafa; /* Very light grey background */
+      color: #333; /* Dark grey text for better contrast */
+      font-size: 12px; /* Smaller font size */
+      line-height: 1.3; /* Tighter line height */
+    }
+  
+    .callout-container p {
+      margin: 5px 0; /* Reduced margin */
+    }
+  
+    .callout-container strong {
+      color: #333; /* Dark grey for emphasis */
+    }
+  
+    .closebtn {
+      position: absolute;
+      top: 5px; /* Reduced top space */
+      right: 5px; /* Reduced right space */
+      color: #ffffff; /* Dark grey for close button */
+      font-size: 25px; /* Smaller close button */
+      cursor: pointer;
+      background: transparent;
+      border: none;
+    }
+  
+    .closebtn:hover {
+      color: #ffcccb; /* Light red on hover */
+    }
+  </style>
+  
+  <div class="callout">
+    <div class="callout-header">
+      Keyboard Shortcuts
+      <button class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">×</button>
+    </div>
+    <div class="callout-container">
+      <p><strong>Press</strong> <strong>Alt + D</strong> to go to the <strong>About Me</strong> page.</p>
+      <p><strong>Press</strong> <strong>Alt + K</strong> to go to the <strong>My Family</strong> page.</p>
+      <p><strong>Press</strong> <strong>Alt + R</strong> to go to the <strong>Holiday</strong> page.</p>
+      <p><strong>Press</strong> <strong>Alt + B</strong> to go to the <strong>My Best Mate</strong> page.</p>
+      <p><strong>Press</strong> <strong>Alt + V</strong> to go to the <strong>Video Collection</strong> page.</p>
+    </div>
+  </div>
+  
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="#top">
+        Back to Top
+    </a>
+</div>
+<br>
+
+<!-- Footer Section -->
+<footer style="
+background-color: #632660; 
+color: #fff; 
+text-align: center; 
+padding: 20px; 
+position: relative; 
+bottom: 0; 
+width: 100%; 
+font-family: 'Arial', sans-serif; 
+font-size: 16px; 
+">
+<p style="
+    margin: 0;
+    font-size: 14px; 
+">
+© 2024 Diary of Meera. All Rights Reserved. | Designed by Meera.
 </p>
-</ul>
-</nav>
-
-<article>
-  <center><h1>A Little Bit About Me</h1></center>
-  <p><pre>
-    <b>Full Name:</b> <i>Nur Syameera Binti Mohd Fauzi</i>
-    <b>Nickname:</b> <i>Meera or Syameera</i>
-    <b>Age:</b> <i>20 years old</i>
-    <b>Date of Birth:</b> <i>August 8, 2004</i>
-    <b>Place of Birth:</b> <i>Universiti Malaya Medical Centre, Kuala Lumpur</i>
-    <b>Hometown:</b> <i>Klang, Selangor</i>
-    <b>Positive Trait:</b> <i>Calm, honest, good listener</i>
-    <b>Negative Trait:</b> <i>Quiet and easily upset</i>
-    <b>Blood Type:</b> <i>Type O</i>
-    <b>Hobbies:</b> <i>watching movie and watching videos on YouTube</i>
-    <b>Favorite Foods:</b> <i>Tail soup and Tomyam</i>
-    <b>Favorite Drink:</b> <i>Teh ais</i>
-    <b>Career Dream0:</b> <i>To become a web designer</i>
-    <b>Favorite Pet:</b> <i>Cat</i>
-    <b>Inspirational Figure:</b> <i>Aina Abdul</i>
-    </p></pre>
-</section>
-
-<body>
-<footer>
-  <p>More Detail Click on the Button Provided</p>
 </footer>
+
 </body>
-
-<style>
-  *{
-  box-sizing: border-box;
-  }
-header {
-  background-color: rgb(232, 199, 230);
-  text-align: center;
-  padding: 2px;
-  font-size: 30px;
-  color: rgb(138, 66, 118);
-  }
-nav {
-  float: left;
-  width: 30%;
-  height: 350px;
-  background: #f2ecf1;
-  padding: 20px;
-  }
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  }
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #d2c0d4;
-  height: 350px; 
-  }
-footer {
-  background-color: rgb(223, 160, 201);
-  padding: 10px;
-  width: 100%;
-  text-align: center;
-  color: rgb(245, 237, 237);
-
-</style>
-
-<img src="image/photo_2024-11-12_15-10-57.jpg"
-width="350">
-<img src="image/photo_2024-11-12_15-11-05.jpg"
-width="350">
-
-
-
-
-
-
 </html>

@@ -1,196 +1,441 @@
 <html>
   <head>
-    <title>𐙚 My Family 𐙚</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> 🏡⊹ ࣪°｡My Family ⋆⸜ 🌷♡</title>
   </head>
 
   <style>
-
-    body
-      {
-        background-image: url(image/background\ home.jpeg);
-      }
-
-</style>
-</body>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #632660;
-    color: white;
-  }
+    body {
+      background-image: url(image/background\ dark\ blue.jpg);
+      background-size: cover; 
+      background-repeat: no-repeat; 
+      background-position: center; 
+      height: 100vh;
+      margin: 0; 
+    }
   </style>
-  </head>
+
   <body>
-  
+  <link rel="stylesheet" href="style.css">
   <div class="topnav">
-    <a class="active" href="home_site.html">Home</a>
-    <a href="biodata.html" target="_blank" >Biodata</a>
-    <a href="my_friend.html" target="_blank" >My Family</a>
-    <a href="holiday.html" target="_blank" >Vacation</a>
-    <a href="my_friend.html" target="_blank" >My Best Mate</a>
-    <a href="fav_thing&person.html" target="_blank" >Top Pick & Love</a>
+    <a class="active" href="index.html"accesskey="p">Home</a>
+    <a href="biodata.html" target="_blank" accesskey="h">About Me</a>
+    <a href="family.html" target="_blank" accesskey="k">My Family</a>
+    <a href="holiday.html" target="_blank" accesskey="r">Vacation</a>
+    <a href="my_friend.html" target="_blank" accesskey="b">My Best Mate</a>
+    <a href="video_gallery.html" target="_blank" accesskey="v">Video Collection</a>
   </div>
-  
-  <div style="padding-left:16px">
-    <h2>A Warm Welcome to You!</h2>
-    <p>I’m so glad you’re here! This website is all about sharing who I am, what I do, and what inspires me. Whether you’re curious about
-      my work, my journey, or just want to learn a bit more about me, I hope you find something interesting and meaningful here.I created
-      this site to show you a little of my world. You’ll find updates on my projects, my interests, and the things I’m passionate about.
-      It’s a place where you can see what drives me and keeps me going. Take a look around, explore what’s here, and feel free to reach 
-      out if anything catches your eye. Thank you for visiting, and I hope you enjoy your time here!
-      </p>
-  </div>
-  
-  </body>
+  <br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p>
-  <center><font color="#bd1a6b"><h2>A Warm Welcome to You!</h2>
-</p>
-
-<div align="center">
-<hr size="5" color="Purple" width="20%">
-<text-justify: inter-word;
-
-  
-</text-justify:><font color="#8c4575"><p style=text-align:justify;"> 
-  I’m so glad you’re here! This website is all about sharing who I am, what I do, and what inspires me. Whether you’re curious about
-  my work, my journey, or just want to learn a bit more about me, I hope you find something interesting and meaningful here.I created
-  this site to show you a little of my world. You’ll find updates on my projects, my interests, and the things I’m passionate about.
-  It’s a place where you can see what drives me and keeps me going. Take a look around, explore what’s here, and feel free to reach 
-  out if anything catches your eye. Thank you for visiting, and I hope you enjoy your time here!
-  
-</p>
+  <!-- Display Last Updated Time -->
+<div id="lastUpdated" style="text-align: right; font-family: Arial, sans-serif; padding: 5px; color: #4a4a4a; font-size: 0.9em;">
+  <span style="font-weight: bold; color: #f1ec87; padding: 2px 4px; border-bottom: 2px solid #f1ec87;">
+    Last Updated:
+  </span>
+  <span id="updateTime" style="color: #ffffff; padding: 2px 4px; font-style: italic;"></span>
 </div>
 
-<section>
-<nav>
-<ul>
-<p>
-            
-  <!--Using images as hyperlink, local link-->
-  <li><a href="biodata.html" target="_blank"><img src="image/button getting to know me.png"></li>
-  <li><a href="family.html"target="_self"><img src="image/button my family.png"></li>
-  <li><a href="holiday.html"target="_blank"><img src="image/button vacation time.png"></li>
-  <li><a href="my_friend.html"target="_blank"><img src="image/button my best mate.png"></li>
-  <li><a href="fav_thing&person.html"target="_self"><img src="image/button my top pick and love.png"></li>
+<script>
+  // Format and display the last updated time
+  function formatLastUpdated() {
+    const lastModified = new Date(document.lastModified);
+    const options = { 
+      weekday: 'short', 
+      month: 'short', 
+      day: 'numeric', 
+      year: 'numeric', 
+      hour: '2-digit', 
+      minute: '2-digit' 
+    };
+    return lastModified.toLocaleDateString('en-US', options);
+  }
 
-</p>
-</ul>
-</nav>
+  // Set the formatted date and time
+  document.getElementById('updateTime').textContent = formatLastUpdated();
+</script>
 
-<article>
-  <center><h1>A Little Bit About Me</h1></center>
-  <p><pre>
-    <b>Full Name:</b> <i>Nur Syameera Binti Mohd Fauzi</i>
-    <b>Nickname:</b> <i>Meera or Syameera</i>
-    <b>Age:</b> <i>20 years old</i>
-    <b>Date of Birth:</b> <i>August 8, 2004</i>
-    <b>Place of Birth:</b> <i>Universiti Malaya Medical Centre, Kuala Lumpur</i>
-    <b>Hometown:</b> <i>Klang, Selangor</i>
-    <b>Positive Trait:</b> <i>Calm, honest, good listener</i>
-    <b>Negative Trait:</b> <i>Quiet and easily upset</i>
-    <b>Blood Type:</b> <i>Type O</i>
-    <b>Hobbies:</b> <i>watching movie and watching videos on YouTube</i>
-    <b>Favorite Foods:</b> <i>Tail soup and Tomyam</i>
-    <b>Favorite Drink:</b> <i>Teh ais</i>
-    <b>Career Dream0:</b> <i>To become a web designer</i>
-    <b>Favorite Pet:</b> <i>Cat</i>
-    <b>Inspirational Figure:</b> <i>Aina Abdul</i>
-    </p></pre>
-</section>
+  <p>
+    <center><font color="#705656" size="9" face="Courier New" style="font-weight: bold; text-transform: uppercase; letter-spacing: 2px; padding: 10px; background-color: #dfdda2; border-radius: 45px;">
+      ˚˖𓍢ִ໋🦢˚Family Circle ✧˚👨‍👩‍👧‍👧 ⋆｡
+    </font>
+    <a name="#stop"></a>
+  </p>
 
-<body>
-<footer>
-  <p>More Detail Click on the Button Provided</p>
-</footer>
+  <br>
+
+<!-- Image Map-->
+<img src="image/family photo.jpg" usemap="#image-map">
+<map name="image-map">
+    <area target="_blank" alt="Ayah" title="Ayah" href="pdf/Ayah saya.pdf" coords="160,249,258,657" shape="rect">
+    <area target="_blank" alt="Meera" title="Meera" href="image/saya.jpg" coords="279,277,268,335,264,423,267,480,281,531,278,566,261,638,283,666,321,656,332,556,339,496,346,455,340,395,336,339,327,305,326,281,307,269" shape="poly">
+    <area target="_self" alt="Mimie" title="Mimie" href="image/kak.jpg" coords="354,272,353,301,352,337,343,360,349,400,351,437,351,466,345,507,340,557,335,629,359,651,401,672,424,662,424,585,428,512,430,429,431,361,413,314,402,276,380,261" shape="poly">
+    <area target="_self" alt="Ibu" title="Ibu" href="image/ibu.jpg" coords="434,246,527,662" shape="rect">
+</map>
+<p style="font-size:0.9em; color: #868181; margin-top: 10px;">(Click on the person to learn more)</p>
+
+<br> 
+
+<link rel="stylesheet" href="style.css">
+<blockquote>
+  "Thank you, Mom and Dad, for your endless love and support. You’ve both shaped me into who I am today with your guidance, care, and sacrifices. 
+  I’m forever grateful for everything you’ve done, and I hope to make you proud one day"
+  <cite>- Your daughter</cite>
+</blockquote>
+
+<br>
+
+<link rel="stylesheet" href="style.css">
+<h1 style="color: rgba(255, 255, 255, 0.678);">My Life’s Backbone</h1>
+  <div class="clearfix">
+    <div class="box">
+        <h2>My Lovely Ayah🧔🌷</h2>
+        <p style="text-align: justify;">
+          Here, I want to share a little about my father, <b>Mohd Fauzi bin Ramli</b>. 
+          My father was born on <u>September 9,1970</u> in <u>Muar,Johor</u>, and he was <b>54 years old</b> when he passed away. 
+          He got married later in life, at the age of <b>33</b>. My dad was a <span style="color: darkblue;">hardworking</span> man who always did his best to support our family. 
+          He <i>never gave up</i> and worked tirelessly to provide us with the best life he could. I am the <b>youngest one</b> in the family, and I am very lucky to have had a father who was <span style="color: darkgreen;">loving</span> and <span style="color: darkgreen;">strong</span>. 
+          <i>Here is a picture of me with my dad when I was little.</i> Losing my father, especially since I was so close to him, was not easy for me to accept at first. 
+          But over time, I have learned to accept his passing. Even though my heart still feels <span style="color: crimson;">empty</span>, I try to accept the reality that my dad is gone. 
+          I <b>miss his jokes</b> and the way he always knew how to make me smile. <span style="color: darkred;">Thank you, dad</span>, for everything you did for us, your love, and the lessons you taught me. 
+          I will always keep the <i>beautiful memories</i> of you in my heart and pray that Allah blesses your soul.
+        </p>
+
+        <style>
+          video {
+            border: 3px solid #234e78; 
+            border-radius: 5px; 
+            padding: 10px; 
+          }
+        </style>
+        
+        <video width="29%" controls>
+            <source src="video/bersama ayah.mp4" type="video/mp4">
+        </video>
+
+        <video width="29%" controls>
+          <source src="video/tiktok video qoutes ayah.mp4" type="video/mp4">
+       </video>
+        
+        <video width="28%" controls>
+            <source src="video/moment with ayah.mp4" type="video/mp4">
+        </video>
+    </div>
+<br>
+    <div class="box">
+        <h2>My Syurga🧕💐</h2>
+        <p style="text-align: justify;">
+          My mother, <b>Rusnani Binti Pandi</b>, is a <span style="color: darkgreen;">quiet</span> and <span style="color: darkgreen;">loving</span> woman. 
+          At the age of <b>55</b>, she has worked for almost <b>40 years</b> to ensure the comfort and well-being of her children. 
+          Even though she doesn’t speak much, her <i>love for me</i> is always clear. When I was studying in <u>Rembau</u>, she would always check on me, 
+          making sure I had enough <span style="color: darkblue;">food</span>, <span style="color: darkblue;">money</span>, and didn’t miss any classes. 
+          Every word from her was a sign of how much she cared for me. Since my father passed away, I try to go home <b>every two weeks</b> to keep her company and 
+          make sure she doesn't feel lonely. I know <i>nothing can replace the time spent with our parents</i>. 
+          My mother also <span style="color: darkred;">loves to cook</span>. Every time I crave her cooking, even after a long day at work, she always makes the effort 
+          to fulfill my wish <span style="color: crimson;">with love</span>. My hope is to <b>make my mother proud</b> because I know my late father would be happy 
+          to see my success in the future. I want to <b>repay her sacrifices</b> and show her that all her hard work and love have shaped me into someone who strives 
+          to achieve great things. I dream of giving her a <span style="color: darkblue;">comfortable</span> and <span style="color: darkblue;">peaceful life</span>, 
+          just as she has always given me.
+        </p>
+
+        <style>
+          video {
+            border: 3px solid #234e78; 
+            border-radius: 5px; 
+            padding: 5px; 
+          }
+        </style>
+
+        <video width="29%" controls>
+           <source src="video/tiktok video qoutes ibu 2.mp4" type="video/mp4">
+        </video>
+
+        <video width="29%" controls>
+          <source src="video/tiktok video qoutes ibu.mp4" type="video/mp4">
+       </video>
+  
+        <video width="28%" controls>
+           <source src="video/family hantar first day di uitm.mp4" type="video/mp4">
+        </video>
+    </div>
+
+<br clear="all">
+
+<h1 style="color: rgb(241, 228, 228); font-family: 'Lucida Handwriting', cursive; text-align: center; font-size: 36px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); letter-spacing: 1px;">
+  My Sister 💕
+</h1>
+<div style="background-color: #8e9dcd9a; padding: 20px; font-size: 19px; border-radius: 10px; max-width: 1100px; margin: 20px auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+  <p style="text-align: justify; margin: 0; color: rgb(250, 198, 143);">
+    <img src="image/meera and mimie time kecik.jpg" height="300" width="300" style="float: left; border: 1px solid #234e78; margin: 0 20px 10px 0;">
+        My sister, Nurelyna Syamimie, is 21 years old and currently pursuing a degree in Chemical Engineering at Universiti Teknologi Petronas (UTP)
+        in Sri Iskandar, Perak. She’s not just brilliant she’s <i><u>incredibly dedicated</u></i>, having scored straight 11A's in her SPM, and her dream is to 
+        continue her studies all the way to a PhD. What makes her even more special is how <i><u>caring and thoughtful</u></i> she is, especially when it comes 
+        to family. She constantly reminds us about the <i><u>importance of religion</u></i>, always guiding us with wisdom. Even though she’s far away, she 
+        makes sure to stay connected by calling and messaging <i><u>every day</u></i> to check on us, making sure we’re okay. 
+    
+        We didn’t always get along. In fact, there was a time when we fought a lot, and it would often make her cry. My <i><u>rebellious nature</u></i> made things 
+        difficult, but through it all, she showed <i><u>remarkable patience</u></i>. Over the years, we've learned to appreciate and understand each other better. 
+        Now, we share a bond that is built on <i><u>trust, love</u></i>, and the many experiences we’ve been through together. 
+    
+        I look back on our childhood with a mixture of <i><u>laughter and nostalgia</u></i>. Although there were times we didn’t get along and even fought, those moments, 
+        in hindsight, are the ones that <i><u>shaped our relationship</u></i>. They’ve become some of the <i><u>most unforgettable memories</u></i> of our lives. Despite the ups and 
+        downs, I wouldn’t trade those times for anything because they’ve helped me grow closer to my sister, who has been my <i><u>pillar</u></i> in ways I never realized 
+        until now.
+      </p>   
+    </div>
+  </p>
+</div>
+
+<div style="margin: 20px; padding: 15px; border: 2px solid #1E88E5; border-radius: 10px; background: #ffffff; max-width: 800px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <h1 style="text-align: center; font-family: 'Arial', sans-serif; font-weight: bold; color: #1E88E5; font-size: 24px;">
+      My Bucket List 🎯
+  </h1>
+  <p style="font-family: 'Arial', sans-serif; font-size: 16px; color: #1d66a6; text-align: center; margin: 10px 0;">
+      A collection of dreams and goals that I want to achieve in my life.
+  </p>
+  <ul style="list-style-type: none; padding-left: 0; font-family: 'Verdana', sans-serif; font-size: 16px; color: #555; line-height: 1.6; margin: 0;">
+      <li style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+          <img src="image/custom makers cherry.jpg" style="width: 40px; height: 35px; margin-right: 10px;">
+          <span>Explore a new place in Malaysia, capturing photos for memories and inspiration ✈️</span>
+      </li>
+      <li style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+          <img src="image/custom makers cherry.jpg" style="width: 40px; height: 35px; margin-right: 10px;">
+          <span>Learn to cook an authentic Italian dish 🍝</span>
+      </li>
+      <li style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+          <img src="image/custom makers cherry.jpg" style="width: 40px; height: 35px; margin-right: 10px;">
+          <span>Take a family road trip across Malaysia 🚗</span>
+      </li>
+      <li style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+          <img src="image/custom makers cherry.jpg" style="width: 40px; height: 35px; margin-right: 10px;">
+          <span>Volunteer for a community project or charity event, giving back and meeting new people 🧹</span>
+      </li>
+      <li style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+          <img src="image/custom makers cherry.jpg" style="width: 40px; height: 35px; margin-right: 10px;">
+          <span>Try an adventurous activity like parasailing or zip-lining, stepping out of my comfort zone 😱</span>
+      </li>
+      <li style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+          <img src="image/custom makers cherry.jpg" style="width: 40px; height: 35px; margin-right: 10px;">
+          <span>Learn a new language and practice with native speakers online 📚</span>
+      </li>
+      <li style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+          <img src="image/custom makers cherry.jpg" style="width: 40px; height: 35px; margin-right: 10px;">
+          <span>Take a family photo in matching outfits for a fun and memorable keepsake 🗼</span>
+      </li>
+      <li style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+          <img src="image/custom makers cherry.jpg" style="width: 40px; height: 35px; margin-right: 10px;">
+          <span>Attend a concert or live event of my favorite artist or band to enjoy unforgettable moments 🌍</span>
+      </li>
+      <li style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+          <img src="image/custom makers cherry.jpg" style="width: 40px; height: 35px; margin-right: 10px;">
+          <span>Switch to a healthier lifestyle, experimenting with plant-based meals or clean eating 🏋️‍♀️</span>
+      </li>
+  </ul>
+  <p style="font-family: 'Tahoma', sans-serif; font-size: 14px; color: #888; text-align: center; margin-top: 15px;">
+      <i>"Dream big, take small steps, and make it happen!"</i>
+  </p>
+</div>
+  
+  <br clear="all">
+
+    <!-- Page container for spacing -->
+    <link rel="stylesheet" href="style.css">
+    <div class="page-container">
+      <!-- Page heading -->
+      <div class="heading">Collection of Image Gallery of My Family</div>
+  
+      <!-- Responsive gallery container -->
+      <link rel="stylesheet" href="style.css">
+      <div class="gallery-container">
+        <!-- Individual gallery items -->
+        <div class="gallery">
+          <a target="_blank" href="image/image gallery 1.jpg">
+            <img src="image/image gallery 1.jpg">
+          </a>
+          <div class="desc">Aidilfitri 2024</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="image/image gallery 2.jpg">
+            <img src="image/image gallery 2.jpg">
+          </a>
+          <div class="desc">Mimie & Ayah</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="image/image gallery 3.jpg">
+          <img src="image/image gallery 3.jpg">
+          </a>
+          <div class="desc">Cousin Ayah's side</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="image/image gallery 4.jpg">
+            <img src="image/image gallery 4.jpg">
+          </a>
+          <div class="desc">Family Ibu's side</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="image/image gallery 5.jpg">
+            <img src="image/image gallery 5.jpg">
+          </a>
+          <div class="desc">at Pulau Batik</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="image/image gallery 6.jpg">
+            <img src="image/image gallery 6.jpg">
+          </a>
+          <div class="desc">With Alin & Lola</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_self" href="image/image gallery 7.jpg">
+            <img src="image/image gallery 7.jpg">
+          </a>
+          <div class="desc">Ayah & Ibu</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_self" href="image/image gallery 8.jpg">
+            <img src="image/image gallery 8.jpg">
+          </a>
+          <div class="desc">When i was 5 years old</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_self" href="image/image gallery 9.jpg">
+            <img src="image/image gallery 9.jpg">
+          </a>
+          <div class="desc">with Paksu</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_self" href="image/image gallery 10.jpg">
+            <img src="image/image gallery 10.jpg">
+          </a>
+          <div class="desc">When kak was little</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_self" href="image/image gallery 11.jpg">
+            <img src="image/image gallery 11.jpg">
+          </a>
+          <div class="desc">together with sister</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_self" href="image/image gallery 12.jpg">
+            <img src="image/image gallery 12.jpg">
+          </a>
+          <div class="desc">Me and my cousin-Balqis</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="image/short vacation.jpg">
+            <img src="image/short vacation.jpg">
+          </a>
+          <div class="desc">Family Holiday</div>
+        </div>
+  
+      <div class="gallery">
+          <a target="_blank" href="image/with cousin.jpg">
+            <img src="image/with cousin.jpg">
+          </a>
+          <div class="desc">My cousin aka Mia</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="image/first day orientaion.jpg">
+            <img src="image/first day orientaion.jpg">
+          </a>
+          <div class="desc">First day Orientation</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="image/raya 2024.jpg">
+            <img src="image/raya 2024.jpg">
+          </a>
+          <div class="desc">Raya 2024 at Perak</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="image/us with ayah.jpg">
+            <img src="image/us with ayah.jpg">
+          </a>
+          <div class="desc">Moments with Ayah</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="image/ramli's family.jpg">
+            <img src="image/ramli's family.jpg">
+          </a>
+          <div class="desc">Stayover Grandfather Homestay</div>
+        </div>
+      </div>
+
+  <div style="margin: 30px; padding: 20px; border: none; border-radius: 20px; background: #fce4ec; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+    <h1 style="text-align: center; font-family: 'Verdana', sans-serif; font-weight: bold; color: #880E4F; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+        My Safe Place, Syazlan❤️
+    </h1>
+    <div style="text-align: center; margin: 20px;">
+        <img src="image/hissss.jpg" style="width: 300px; height: auto; border-radius: 20px; border: 5px solid #D81B60;">
+    </div>
+    <p style="font-family: 'Tahoma', sans-serif; font-size: 16px; color: #4A148C; line-height: 1.8; text-align: justify; margin: 0 10px;">
+      The second man I love, after my late father, is someone who has always taken great care of me. His support, kindness, and presence in 
+      my life have been invaluable, and I’m truly grateful for the love and care he has shown me. If I could, I would tell my father that I’ve 
+      found someone who looks after me just as he did, ensuring I’m always well and happy. I’m grateful for his presence in my life, and I’m 
+      thankful for how he continues to be my strength and companion in every step of my journey.
+    </p>
+    <p style="text-align: center; font-family: 'Lucida Handwriting', cursive; font-size: 18px; color: #880E4F; margin-top: 15px;">
+        <i>"Thank you for always being there when I need you most."</i>
+    </p>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="file:///C:/Users/Meera/OneDrive/Desktop/Webspace Meera/Diary_Meera/memories with him/" 
+         style="text-decoration: none; font-family: 'Arial', sans-serif; color: #FFFFFF; background-color: #AD1457; padding: 10px 20px; border-radius: 30px; font-size: 16px; box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);">
+          See Our Memories
+      </a>
+  </div>
+  
+<br>
+
+<link rel="stylesheet" href="style.css">
+<div class="callout">
+  <div class="callout-header">
+    Keyboard Shortcuts
+    <button class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">×</button>
+  </div>
+  <div class="callout-container">
+    <p><strong>Press</strong> <strong>Alt + d</strong> to go to the <strong>About Me</strong> page.</p>
+    <p><strong>Press</strong> <strong>Alt + k</strong> to go to the <strong>My Family</strong> page.</p>
+    <p><strong>Press</strong> <strong>Alt + r</strong> to go to the <strong>Holiday</strong> page.</p>
+    <p><strong>Press</strong> <strong>Alt + b</strong> to go to the <strong>My Best Mate</strong> page.</p>
+    <p><strong>Press</strong> <strong>Alt + v</strong> to go to the <strong>Video Collection</strong> page.</p>
+  </div>
+</div>
+
+    <a href="#top">Back to Top</a>
+    </div>
+
+   <!-- Footer Section -->
+   <footer style="
+       background-color: #632660; 
+       color: #fff; 
+       text-align: center; 
+       padding: 20px; 
+       position: relative; 
+       bottom: 0; 
+       width: 100%;
+       font-family: 'Arial', sans-serif; 
+       font-size: 16px; 
+   ">
+      <p style="
+          margin: 0;
+          font-size: 14px; 
+      ">
+      © 2024 Diary of Meera. All Rights Reserved. | Designed by Meera.
+      </p>
+  </footer>
+
 </body>
-
-<style>
-  *{
-  box-sizing: border-box;
-  }
-header {
-  background-color: rgb(232, 199, 230);
-  text-align: center;
-  padding: 2px;
-  font-size: 30px;
-  color: rgb(138, 66, 118);
-  }
-nav {
-  float: left;
-  width: 30%;
-  height: 350px;
-  background: #f2ecf1;
-  padding: 20px;
-  }
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  }
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #d2c0d4;
-  height: 350px; 
-  }
-footer {
-  background-color: rgb(223, 160, 201);
-  padding: 10px;
-  width: 100%;
-  text-align: center;
-  color: rgb(245, 237, 237);
-
-</style>
-
-<img src="image/photo_2024-11-12_15-10-57.jpg"
-width="350">
-<img src="image/photo_2024-11-12_15-11-05.jpg"
-width="350">
-
-
-
-
-
-
 </html>

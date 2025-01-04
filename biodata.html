@@ -1,139 +1,630 @@
 <html>
-      <head>
-           <title>𐙚 About meeerraaa 𐙚</title>
-     </head>
+<head>
+    <title>𐙚 About Me 𐙚</title>
+</head>
 
-     <style>
-           body
-           {
-            background-image: url(image/download\ \(5\).jpeg);
-           }
-      </style>
-
-      <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <style>
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-      
-      .topnav {
-        overflow: hidden;
-        background-color: #333;
-      }
-      
-      .topnav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-      
-      .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      
-      .topnav a.active {
-        background-color: #632660;
-        color: white;
-      }
-      </style>
-      </head>
-      <body>
-      
-      <div class="topnav">
-        <a class="active" href="home_site.html">Home</a>
-        <a href="biodata.html" target="_blank" >Biodata</a>
-        <a href="my_friend.html" target="_blank" >My Family</a>
-        <a href="holiday.html" target="_blank" >Vacation</a>
-        <a href="my_friend.html" target="_blank" >My Best Mate</a>
-        <a href="fav_thing&person.html" target="_blank" >Top Pick & Love</a>
-      </div>
-      
-      
-      
-      </body>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('image/download (5).jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
 
 
-      <p>
-      <center><font color="#bd1a6b" size="9" face="courier new">𓍢ִ໋🌷͙֒ᰔ.Personal Background⋆.˚🦋༘⋆</font><a name="#stop"></a>
-      </p>
+        /* Content Styling */
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
 
-      <hr size="6" color="Purple" width="60%">
+        .content h2 {
+            color: #bd1a6b;
+        }
 
-      <div align="center">  
-      <a href="image/photo_2024-11-12_23-15-29.jpg">
-      <img src="image/photo_2024-11-12_23-15-29.jpg" height="400" border="6" hsapce="10"
-      vspace="10">
+        .content img {
+            margin: 10px;
+            border: 6px solid #e8e8e8;
+            border-radius: 10px;
+            width: auto;
+            height: 400px;
+        }
 
-      <a href="image/photo_2024-11-12_23-15-23.jpg">
-      <img src="image/photo_2024-11-12_23-15-23.jpg" height="400" border="6" hsapce="10"
-      vspace="10">
+        .section {
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+            background-color: rgba(217, 160, 160, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-      <a href="image/photo_2024-11-12_15-11-05.jpg">
-      <img src="image/photo_2024-11-12_15-11-05.jpg" height="400" border="6" hspace="10"
-      vspace="10">
-      </a>
-      
-      <p>
-      <font color="#e614a6" size="10" face=""courier new">⊱ ─── ⋅ʚ Myself ɞ⋅ ─── ⊰</font>
-      </p>
+        .quote {
+            font-style: italic;
+            color: #c73f70;
+            text-align: center;
+            margin: 20px 0;
+        }
 
-<p>
-      <img src="image/WhatsApp Image 2024-07-24 at 16.50.34_2b715a07.jpg" height="300" border="5" hspace="10" 
-      style="float: left;"> 
-      <h4 style="text-align: justify;">
-      Hello, my name is Nur Syameera Binti Mohd Fauzi, but most people call me Meera or Syameera. I’m 20 years old, born at Universiti Malaya Medical Centre in Kuala Lumpur 
-      on 8 August 2004, and I grew up in Klang, Selangor. My hobbies include watching movies and relaxing with ASMR mukbang videos on YouTube. I’m drawn to web design because
-      it allows me to be creative with colors, layouts, and images to make websites look appealing.My passion for this career started when I worked on a website development task,
-      which inspired me to pursue web design as my dream job, if all goes well. I’m also a huge fan of Kung Fu Panda movies—they’re my favorite! And I absolutely adore cats because 
-      they can brighten any day with their sweet purrs and cuddles. I’m someone who values honesty and being a good listener, although I can be quiet at times and get easily hurt when
-      something bothers me deeply. My favorite foods are tail soup and tomyam, which are both packed with flavor, while Teh Ais Medan is my go-to drink—it’s refreshing and hits the spot
-      every time. One person I look up to is Aina Abdul; I admire her for her amazing voice and unique style, blending music with fashion. Overall,I’m grateful for the people and passions 
-      that shape me, and I’m excited about the journey ahead as I work toward my dreams.</p>
+        .quote blockquote {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .quote::before {
+            content: "“";
+            font-size: 2em;
+            vertical-align: top;
+        }
+
+        .quote::after {
+            content: "”";
+            font-size: 2em;
+            vertical-align: bottom;
+        }
+
+        a {
+            color: #632660;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Float Images */
+        .float-left {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .float-right {
+            float: right;
+            margin-left: 15px;
+        }
+    </style>
+
+<body>
+    <!-- Navigation -->
+    <link rel="stylesheet" href="style.css">
+    <div class="topnav">
+        <a class="active" href="index.html" accesskey="p">Home</a>
+        <a href="biodata.html" target="_blank" accesskey="h">About Me</a>
+        <a href="family.html" target="_blank" accesskey="k">My Family</a>
+        <a href="holiday.html" target="_blank" accesskey="r">Vacation</a>
+        <a href="my_friend.html" target="_blank" accesskey="b">My Best Mate</a>
+        <a href="video_gallery.html" target="_blank" accesskey="v">Video Collection</a>
+    </div>
+
+
+<!-- Display Last Updated Time -->
+<div id="lastUpdated" style="text-align: right; font-family: Arial, sans-serif; padding: 5px; color: #4a4a4a; font-size: 0.9em;">
+    <span style="font-weight: bold; color: #cc007e; padding: 2px 4px; border-bottom: 2px solid #cc007e;">
+      Last Updated:
+    </span>
+    <span id="updateTime" style="color: #333; padding: 2px 4px; font-style: italic;"></span>
+  </div>
+  
+  <script>
+    // Format and display the last updated time
+    function formatLastUpdated() {
+      const lastModified = new Date(document.lastModified);
+      const options = { 
+        weekday: 'short', 
+        month: 'short', 
+        day: 'numeric', 
+        year: 'numeric', 
+        hour: '2-digit', 
+        minute: '2-digit' 
+      };
+      return lastModified.toLocaleDateString('en-US', options);
+    }
+  
+    // Set the formatted date and time
+    document.getElementById('updateTime').textContent = formatLastUpdated();
+  </script>
+  
+
+    <!-- Personal Background -->
+    <div class="content">
+        <h1>𓍢ִ໋🌷͙֒ᰔ Personal Background ⋆.˚🦋༘⋆</h1>
+        <hr size="10" color="purple" width="60%">
+
+        <!-- Images -->
+        <a href="image/photo_2024-11-12_23-15-29.jpg">
+            <img src="image/photo_2024-11-12_23-15-29.jpg">
+        </a>
+        <a href="image/photo_2024-11-12_23-15-23.jpg">
+            <img src="image/photo_2024-11-12_23-15-23.jpg">
+        </a>
+        <a href="image/photo_2024-11-12_15-11-05.jpg">
+            <img src="image/photo_2024-11-12_15-11-05.jpg">
+        </a>
+
+    <!-- Introduction Section -->
+    <div class="section">
+    <h2>₊ ˚  ⊹ ₊๋Short Biodata࣭ ⭑  ₊ ⊹</h2>
+    <img src="image/photo_2024-03-25_19-04-11.jpg" class="float-left" style="width: 320px; height: auto;">
+    <div style="text-align: justify;">
+        <h3>
+            <b>Full Name:</b> <i>Nur Syameera Binti Mohd Fauzi</i><br>
+            <b>Nickname:</b> <i>Meera or Syameera</i><br>
+            <b>Age:</b> <i>20 years old</i><br>
+            <b>Status:</b> <i>Student</i><br>
+            <b>Number of Siblings:</b> <i>2 (I’m the youngest)</i><br>
+            <b>Address:</b> <i> Lot 2513 A Jalan Kampung Sungai Kandis, 41000, Klang Selangor</i><br>
+            <b>Date of Birth:</b> <i>August 8, 2004</i><br>
+            <b>Place of Birth:</b> <i>Universiti Malaya Medical Centre, Kuala Lumpur</i><br>
+            <b>Hometown:</b> <i>Bagan Dato, Perak</i><br>
+            <b>Positive Trait:</b> <i>Calm, honest, good listener</i><br>
+            <b>Negative Trait:</b> <i>Quiet and easily upset</i><br>
+            <b>Blood Type:</b> <i>Type O</i><br>
+            <b>Hobbies:</b> <i>Watching movies and cooking</i><br>
+            <b>Favorite Foods:</b> <i>Tail soup and Tomyam</i><br>
+            <b>Favorite Drink:</b> <i>Teh ais</i><br>
+            <b>Career Dream:</b> <i>To become a Web Designer</i><br>
+            <b>Favorite Pet:</b> <i>Cat</i><br>
+            <b>Inspirational Figure:</b> <i>Neelofa</i>
+        </h3>
+    </div>
+    <br clear="all">
+    </div>
+
+<style> 
+.newspaper {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+}
+</style>
+</head>
+
 <br clear="all">
-      <h2 align="right">🎓My Education🎓</h2> 
-      <div align="right"> 
-      <img src="image/photo_2024-11-12_23-15-22.jpg" height="300" border="5" style="float: right" hspace="10"> 
-      <p>Hello! My name is Nur Syameera Binti Mohd Fauzi, though most people simply call me Meera or Syameera. I’m 20 years old, born on August 8, 2004, at the Universiti Malaya Medical Centre
-      in Kuala Lumpur, and raised in Klang, Selangor. I’m often known for my calm nature, but there’s a side of me that friends and family find warm and honest—I’m always ready to listen.
-      While I’m generally quiet, I feel deeply, and though I try to stay positive, I admit I can become a bit sensitive when hurt. Oh, and I have an O blood type! They say people with blood type O 
-      are less likely to get sick, but that’s just a myth. When I’m not busy with studies or work, I enjoy unwinding with simple hobbies. Watching movies is my favorite way to escape, especially Kung Fu
-      Panda, which has been my all-time favorite from the very first movie. I also like relaxing with ASMR mukbang videos on YouTube; there’s something so soothing about them! My favorite foods are rich and 
-      hearty, like tail soup and spicy tomyam, and for drinks, nothing beats a refreshing glass of teh ais medan—it's like a perfect playlist in a drink, sweet and always hits the spot. One day, I dream of becoming 
-      a web designer. Designing websites is something I find truly exciting because it allows me to express creativity through colors, layouts, and images. When I had my first taste of developing a website, I knew right
-      then that this was the field I wanted to pursue. If all goes well, and if it’s in God’s plan, I hope to make that dream a reality and create websites that not only look beautiful but are also user-friendly and unique.
-      Of course, life wouldn’t be complete without a furry friend. My favorite pet is a cat—they have this amazing way of cheering me up with just a purr or a gentle cuddle. Whether I’m working, relaxing, or feeling a little down,
-      my cat’s always there to lift my spirits. And when it comes to inspiration, Aina Abdul is someone I admire greatly. Her powerful voice and stylish fashion sense speak volumes, and she shares content that beautifully combines her love for music and style.
-        <br clear="all">
 
-        <h2 align="left">🎓Fav Pet🎓</h2> 
-        <img src="image/WhatsApp Image 2024-07-24 at 16.50.34_2b715a07.jpg" height="300" border="5" hspace="10" 
-        style="float: left;"> 
-        Hello, my name is Nur Syameera Binti Mohd Fauzi, but most people call me Meera or Syameera. I’m 20 years old, born at Universiti Malaya Medical Centre in Kuala Lumpur 
-        on 8 August 2004, and I grew up in Klang, Selangor. My hobbies include watching movies and relaxing with ASMR mukbang videos on YouTube. I’m drawn to web design because
-        it allows me to be creative with colors, layouts, and images to make websites look appealing.My passion for this career started when I worked on a website development task,
-        which inspired me to pursue web design as my dream job, if all goes well. I’m also a huge fan of Kung Fu Panda movies—they’re my favorite! And I absolutely adore cats because 
-        they can brighten any day with their sweet purrs and cuddles. I’m someone who values honesty and being a good listener, although I can be quiet at times and get easily hurt when
-        something bothers me deeply. My favorite foods are tail soup and tomyam, which are both packed with flavor, while Teh Ais Medan is my go-to drink—it’s refreshing and hits the spot
-        every time. One person I look up to is Aina Abdul; I admire her for her amazing voice and unique style, blending music with fashion. Overall,I’m grateful for the people and passions 
-        that shape me, and I’m excited about the journey ahead as I work toward my dreams.</p>
-       
-            <center><font color="c73f70 "><h2>💅🏼Inspirational Life Qoutes🌈</h2>
-            <br>
-            <blockqoute>“You are a beautiful work in progress. Every little step you take is one step closer to your dreams, and every challenge you face is an opportunity to grow. Keep going, keep smiling, and keep shining—because the world needs your light, exactly as you are.”</blockqoute>
-            </font>
-      </center
+<h1 style="text-align: center;">My Background</h1>
+<!-- Image on the left -->
+<img src="image/WhatsApp Image 2024-07-24 at 16.50.34_2b715a07.jpg" width="140" height="250" border="5" hspace="10" style="float: left; margin-right: 20px; width: 20%;">
+
+<!-- Video on the right -->
+<video width="300" controls style="float: right; margin-left: 20; width: 20%;  border: 5px solid rgb(204, 197, 204); border-radius: 15px;">
+  <source src="video/vid biodata page.MOV" type="video/mp4">
+  <source src="video/vid biodata page.MOV" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<!-- Text in the middle -->
+<div class="newspaper" style="overflow: hidden;">
+  <h3 style="text-align: justify;">
+    Hello, my name is Nur Syameera Binti Mohd Fauzi, but most people call me Meera or Syameera. I’m 20 years old. I am the youngest of two siblings.
+    When I was born, my mother was 35 years old, and my father was 33 years old. I was born at <a class="two" href="https://www.google.com/maps?q=Universiti+Malaya+Medical+Centre+Kuala+Lumpur" target="_blank">Universiti Malaya Medical Centre in Kuala Lumpur</a> on August 8, 2004, around 1 PM, which happened to be a Thursday. I am from
+    <a class="two" href="https://www.google.com/maps?q=Klang" target="_blank">Klang</a>, and I am very proud of my hometown. I am someone who values
+    honesty and likes to listen to others. Although I tend to be quiet, I am very sensitive and can easily feel hurt when something deeply bothers me.
+    I am also quite pampered when I am with my loved ones. My dream is to become a web designer because I am very interested in any kind of work that 
+    involves creativity, especially designing websites. I believe that with hard work, I can achieve this dream and make a positive impact in the world of technology and digital art.
+  </h3>
+</div>
+
+<div style="clear: both;"></div> 
+
+<br clear="all">
+
+<h2 style="text-align: center;">List of My Educational Center School</h2>
+<!-- Container for the list -->
+<div style="width: 80%; max-width: 600px; margin: 0 auto; padding: 20px; border: 2px solid #000; border-radius: 10px;">
+    <ol style="list-style-type: decimal; padding-left: 20px; text-align: left; margin: 0;">
+    <li>
+        <dl>
+            <dt>PASTI AL-AMANAH</dt>
+            <dd>Pusat Asuhan Tunas Islam</dd>
+        </dl>
+    </li>
+    <li>
+        <dl>
+            <dt>SRA SUNGAI KANDIS</dt>
+            <dd>Sekolah Rendah Agama Sungai Kandis</dd>
+        </dl>
+    </li>
+    <li>
+        <dl>
+            <dt>SKTM</dt>
+            <dd>Sekolah Kebangsaan Telok Menegon</dd>
+        </dl>
+    </li>
+    <li>
+        <dl>
+            <dt>SMKS</dt>
+            <dd>Sekolah Menengah Kebangsaan Shahbandaraya</dd>
+        </dl>
+    </li>
+    <li>
+        <dl>
+            <dt>UITM REMBAU</dt>
+            <dd>Universiti Teknologi MARA Campus Rembau</dd>
+        </dl>
+    </li>
+</ol>
+</div>
+
+<h1 align="right">My Education🎓</h1>
+<img src="image/gif classroom.gif" width="180" height="200" border="5" style="float: right" hspace="10">
+<h4 style="text-align: justify;">
+    <p>
+    <ul style="list-style-position: outside;">
+        <li style="color: #e13c26d1;"> 
+            My educational journey began in preschool when I was 5 years old, where I learned many basic things in a joyful environment. I attended 
+            Pasti Al-Amanah, a place full of sweet memories. Here, I enjoyed every moment because I didn’t have to think about big problems.
+            I focused on learning while playing, which made it fun to learn letters, numbers, and shapes. At that time, life was very simple because 
+            I didn’t have to worry about tests or exams. I spent more time interacting with my friends and getting to know the world outside of home,
+            while developing my social skills. Preschool was a time full of happiness, where I started learning many important things in a relaxed and 
+            fun atmosphere.
+        </li>
+        <br>
+        <li style="color: #761e50c9;"> 
+            After completing my preschool education, I continued my studies at two different schools: SRA in the morning and SKTM in the afternoon. 
+            Although the packed schedule made me tired, the experience was valuable. At SRA, I learned religious subjects like Tauhid, Fiqh, and 
+            Akhlak, which taught me about good character and faith, while SKTM focused on academic subjects like Mathematics, Science, Bahasa Melayu, 
+            and English, where I developed an interest in logical thinking and communication. Recess time was the highlight of the day, as my friends
+            and I would rush to the canteen for snacks, chat, and play games like "police and thief" or "tag" on the field. I was also involved in 
+            extracurricular activities that helped me build teamwork and leadership skills. Overall, despite the tiring schedule, my time at both 
+            schools provided a strong foundation for my academic and personal growth, teaching me the value of patience, perseverance, and friendship,
+            all of which continue to guide me today.
+        </li>
+        <br>
+        <li style="color: #d32f7bd5;"> 
+            After completing my SPM, I was surprised that all my hard work paid off in such an amazing way. With determination and commitment, 
+            I managed to achieve 6As, a result that I am very proud of. This achievement gave me the confidence that putting in full effort would lead 
+            to positive results. In addition, I was awarded the Best Student in the subject of Home Science, which is an award I truly value. This
+            recognition was given for my achievements in a subject I am passionate about, and it inspired me to continue striving in the fields of 
+            creativity and technology. I was called up to the stage to receive the award, a moment that meant a lot to me. All these accomplishments 
+            not only gave me personal satisfaction but also strengthened my motivation to work even harder in facing future educational challenges.
+        </li>
+        <br>
+        <li style="color: #205072d9;"> 
+            I am currently studying at Uitm in my last semester, taking a course in Information Management. This course gives me the opportunity to 
+            explore a field I am interested in, where I learn about technology, data management, and how information can be managed effectively to 
+            support business decisions. Additionally, this course trains me to be more analytical and creative in finding solutions to problems
+            related to information management. With the knowledge and skills I gain, I hope to achieve my goals in the field of technology and 
+            management, while contributing to the development of the industry in the future. I also plan to continue my studies after completing
+            my diploma by pursuing a degree in Human Resources (HR). I chose this course because I am thinking about my future career and my 
+            interest in learning more about HR. I believe that with the knowledge I will gain in this field, I can make a positive impact in 
+            managing human resources in organizations, while helping individuals reach their full potential.
+        </li>
+    </ul>
+    </p>
+</h4>
+
+    <br clear="all">
+
+    <div style="display: flex; gap: 20px; justify-content: center; align-items: flex-start;">
+  <!-- First Box: My Favourite Pet -->
+  <div style="background-color: lightgrey; flex: 1; border: 15px solid rgb(142, 80, 131); padding: 40px; margin: 30px; text-align: justify; display: flex; flex-direction: row; align-items: center; gap: 20px;">
+    <div>
+      <h2 style="text-align: center;">My Favourite Pet</h2>
+      My favorite animal is the cat, a cute and loving creature. I once had two beloved cats named Putih and Amelda, with the name Amelda given 
+      by my late father, making it even more special. They were stray cats that I took in because they were too adorable to leave behind. I cared 
+      for them with love, and they became my loyal companions, especially when I felt sad or lonely. Sadly, their kittens didn’t survive, and in 
+      2022, I lost Putih and Amelda due to a big flood. The loss was heartbreaking, especially because I missed Putih so much. Though they are 
+      gone, the memories of Putih and Amelda remain. They taught me the value of love, responsibility, and appreciating what you have. Their 
+      memories will always live on in my heart.
+    </div>
+    <a target="_self" href="image/catt.jpg">
+      <img src="image/catt.jpg" alt="Cat" style="border: 2px solid #6a3568; border-radius: 6px; padding: 5px; max-width: 150px; height: auto; transition: box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 0 2px 1px rgba(0, 140, 186, 0.5)'" onmouseout="this.style.boxShadow='none'">
+    </a>
+  </div>
+  
+  <!-- Second Box: Hobby of Watching Movie -->
+  <div style="background-color: lightgrey; flex: 1; border: 15px solid rgb(142, 80, 131); padding: 40px; margin: 30px; text-align: justify; display: flex; flex-direction: row; align-items: center; gap: 20px;">
+    <div>
+      <h2 style="text-align: center;">Hobby of Watching Movie</h2>
+      I love watching horror movies because they challenge me to overcome my fear. Every time I watch these movies, I enjoy pushing myself to 
+      stay calm and appreciate the thrilling plots. I especially love stories with surprising plot twists because they keep me excited and 
+      eager to see what happens next. Some of the high-rated horror movies I’ve watched include 
+      <a href="https://youtu.be/6sJRZepIGsk?si=5Pot0pzfAvYcLA0V" target="_blank">Susuk</a>, 
+      <a href="https://youtu.be/pL4_hLGajaE?si=jF1hR-1HpXEaKtKN" target="_blank">Sabrina</a>, 
+      <a href="https://youtu.be/rDHEHcp_m5g?si=SQ9ZSacpyKxOpRp5" target="_self">Pemandi Jenazah</a>, and 
+      <a href="https://youtu.be/anMG2fANUjw?si=Acppr0YkGTWoC9EU" target="_self">Menjelang Ajal</a>. 
+      These movies left a deep impression on me with their unique and intense storylines.
+      <br><b>(Feel free to click on any title that interests you to explore its video trailer.)</b>
+    </div>
+    <a target="_self" href="image/movie time.jpg">
+      <img src="image/movie time.jpg" alt="Movies" style="border: 2px solid #6a3568; border-radius: 6px; padding: 5px; max-width: 150px; height: auto; transition: box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 0 2px 1px rgba(0, 140, 186, 0.5)'" onmouseout="this.style.boxShadow='none'">
+    </a>
+  </div>
+</div>
+
+      <style>
+        table {
+          width: 80%; 
+          margin: 0 auto; 
+          border-collapse: collapse;
+          background-color: #f5e6fa; 
+        }
+        table, th, td {
+          border: 1px solid #ddd;
+        }
+        th, td {
+          padding: 8px;
+          text-align: left;
+        }
+        tr:nth-child(even) {
+          background-color: #f2dff7; 
+        }
+        tr:hover {
+          background-color: #ebd3f4;
+        }
+        th {
+          background-color: #72356f; 
+          color: white;
+        }
+      </style>
+      
+      <h1 style="font-family: 'Comic Sans MS', cursive; color: #e85ea3; text-align: center; font-size: 30px; letter-spacing: 2px;">
+        Movie List 🎥💖
+      </h1>
+      <p>
+        Here are some top-rated movies from different genres that I’ve watched and highly recommend. While horror films are my favorite, I do enjoy exploring 
+        other genres as well. If you’re interested in watching the full movie, simply click on the title to watch:
       </p>
+      
+      <div style="padding: 20px;">
+        <table>
+          <tr>
+                <th style="text-align: center;">Movie Title</th>
+                <th style="text-align: center;">Year</th>
+                <th style="text-align: center;">Description</th>
+                <th style="text-align: center;">Link</th>
+          </tr>
+          <tr>
+            <td>Top Gun: Maverick</td>
+            <td>2023</td>
+            <td>A thrilling continuation of the Top Gun story, where Maverick trains a new generation of pilots for a high-stakes mission.</td>
+            <td><a href="https://www.imdb.com/title/tt1745960/"  target="_blank">Watch Here</a></td>
+          </tr>
+          <tr>
+            <td>Inception</td>
+            <td>2010</td>
+            <td>A mind-bending thriller about a thief who steals secrets from deep within the subconscious during dream states.</td>
+            <td><a href="https://www.tokyvideo.com/video/inception-movie" target="_blank">Watch Here</a></td>
+          </tr>
+          <tr>
+            <td>Avatar: The Way of Water</td>
+            <td>2022</td>
+            <td>The highly anticipated sequel to Avatar, exploring the underwater world of Pandora and the struggles of Jake and Neytiri.</td>
+            <td><a href="https://watch.plex.tv/movie/avatar-the-way-of-water" target="_self">Watch Here</a></td>
+          </tr>
+          <tr>
+            <td>Frozen</td>
+            <td>2013</td>
+            <td>The story of two royal sisters, Elsa and Anna, who face challenges as Elsa learns to control her magical ice powers.</td>
+            <td><a href="https://www.youtube.com/watch?v=yH2LH_h2sFM" target="_self">Watch Here</a></td>
+          </tr>
+          <tr>
+            <td>Toy Story</td>
+            <td>1995</td>
+            <td>The story of a group of toys that come to life when humans aren't around, focusing on Woody and Buzz Lightyear's adventures.</td>
+            <td><a href="https://www.youtube.com/watch?v=aD648YDfpx0" target="_blank">Watch Here</a></td>
+          </tr>
+        </table>
+      </div>
 
-      <a href="#top">Back to Top</a>
+    <!-- Playlist Styles -->
+    <style>
+    /* Title Styling */
+    .playlist-title {
+        text-align: center;
+        font-size: 28px;
+        color: #6a1b9a;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Georgia', serif;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
 
-     </div>
-     </body>
+    /* Playlist Container */
+    .playlist-container {
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: center;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Song Styling */
+    .song {
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, #d16ba5, #c777b9, #ba83ca, #a890e5);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .song h3 {
+        margin: 10px 0;
+        font-size: 20px;
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .song audio {
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+    </style>
+      
+<!-- Playlist Section -->
+<h1 class="playlist-title">Meera's Favorite Playlist</h1>
+<div class="playlist-container">
+    <div class="song">
+        <h3>🎵 Billie Eilish - Happier Than Ever</h3>
+        <audio controls>
+            <source src="audio/billie_eilish_happier_than_ever_.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="song">
+        <h3>🎵 Ernie Zakri, Ade Govinda - Masing Masing</h3>
+        <audio controls>
+            <source src="audio/ernie_zakri-masing_masing.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="song">
+        <h3>🎵 Insomniacks - Reminisensi</h3>
+        <audio controls>
+            <source src="audio/insomniacks-reminisensi.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="song">
+        <h3>🎵 Masdo - Dinda</h3>
+        <audio controls>
+            <source src="audio/masdo-dinda.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="song">
+        <h3>🎵 Noh Salleh - Rahsia Tuhan</h3>
+        <audio controls>
+            <source src="audio/noh-salleh-rahsia-tuhan-.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+<style>
+  blockquote {
+    font-style: italic;
+    border-left: 4px solid #c4612c;
+    padding: 20px 40px;
+    margin: 20px auto;
+    background-color: #f2ebde;
+    font-size: 1.3em;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  cite {
+    display: block;
+    text-align: right;
+    font-size: 1.1em;
+    color: #777;
+    margin-top: 10px;
+  }
+</style>
+
+<!-- Quote Section -->
+<div class="quote" style="text-align: center; font-family: 'Arial', sans-serif; margin: 30px auto; width: 80%; color: #333;">
+    <blockquote style="font-size: 1.6em; font-style: italic; line-height: 1.8; color: #555;">
+        "You are a beautiful work in progress. Every little step you take is one step closer to your dreams, and every challenge you face is an opportunity to grow. Keep going, keep smiling, and keep shining—because the world needs your light, exactly as you are."
+    </blockquote>
+    <p style="font-size: 1em; color: #999; margin-top: 10px;">— Unknown</p>
+</div>
+
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f0f0f0; /* Light grey background */
+    }
+  
+    .callout {
+      position: fixed;
+      bottom: 15px; /* Reduced bottom space */
+      right: 15px; /* Reduced right space */
+      max-width: 220px; /* Reduced max-width */
+      background-color: #ffffff; /* White background */
+      border: 1px solid #ccc; /* Light grey border */
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+    }
+  
+    .callout-header {
+      background-color: #514d4d; /* Dark grey header */
+      color: white;
+      padding: 10px; /* Reduced padding */
+      font-size: 14px; /* Smaller font size */
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid #ccc; /* Light grey border at the bottom */
+    }
+  
+    .callout-container {
+      padding: 10px; /* Reduced padding */
+      background-color: #fafafa; /* Very light grey background */
+      color: #333; /* Dark grey text for better contrast */
+      font-size: 12px; /* Smaller font size */
+      line-height: 1.3; /* Tighter line height */
+    }
+  
+    .callout-container p {
+      margin: 5px 0; /* Reduced margin */
+    }
+  
+    .callout-container strong {
+      color: #333; /* Dark grey for emphasis */
+    }
+  
+    .closebtn {
+      position: absolute;
+      top: 5px; /* Reduced top space */
+      right: 5px; /* Reduced right space */
+      color: #ffffff; /* Dark grey for close button */
+      font-size: 25px; /* Smaller close button */
+      cursor: pointer;
+      background: transparent;
+      border: none;
+    }
+  
+    .closebtn:hover {
+      color: #ffcccb; /* Light red on hover */
+    }
+  </style>
+  
+  <div class="callout">
+    <div class="callout-header">
+      Keyboard Shortcuts
+      <button class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">×</button>
+    </div>
+    <div class="callout-container">
+      <p><strong>Press</strong> <strong>Alt + D</strong> to go to the <strong>About Me</strong> page.</p>
+      <p><strong>Press</strong> <strong>Alt + K</strong> to go to the <strong>My Family</strong> page.</p>
+      <p><strong>Press</strong> <strong>Alt + R</strong> to go to the <strong>Holiday</strong> page.</p>
+      <p><strong>Press</strong> <strong>Alt + B</strong> to go to the <strong>My Best Mate</strong> page.</p>
+      <p><strong>Press</strong> <strong>Alt + V</strong> to go to the <strong>Video Collection</strong> page.</p>
+    </div>
+  </div>
+
+<a href="#top">Back to Top</a>
+</div>
+
+<!-- Footer Section -->
+<footer style="
+    background-color: #632660; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+">
+    <p style="
+        margin: 0;
+        font-size: 14px; 
+    ">
+    © 2024 Diary of Meera. All Rights Reserved. | Designed by Meera.
+    </p>
+</footer>
+
+</body>
 </html>
