@@ -1,0 +1,307 @@
+#clock {
+  font-size: 30px;
+  color: rgb(181, 50, 135);
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0; /* Light grey background */
+}
+
+.callout {
+  position: fixed;
+  bottom: 15px; /* Reduced bottom space */
+  right: 15px; /* Reduced right space */
+  max-width: 220px; /* Reduced max-width */
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+}
+
+.callout-header {
+  background-color: #514d4d; /* Dark grey header */
+  color: white;
+  padding: 10px; /* Reduced padding */
+  font-size: 14px; /* Smaller font size */
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #ccc; /* Light grey border at the bottom */
+}
+
+.callout-container {
+  padding: 10px; /* Reduced padding */
+  background-color: #fafafa; /* Very light grey background */
+  color: #333; /* Dark grey text for better contrast */
+  font-size: 12px; /* Smaller font size */
+  line-height: 1.3; /* Tighter line height */
+}
+
+.callout-container p {
+  margin: 5px 0; /* Reduced margin */
+}
+
+.callout-container strong {
+  color: #333; /* Dark grey for emphasis */
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px; /* Reduced top space */
+  right: 5px; /* Reduced right space */
+  color: #ffffff; /* Dark grey for close button */
+  font-size: 25px; /* Smaller close button */
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.closebtn:hover {
+  color: #ffcccb; /* Light red on hover */
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #632660;
+  color: white;
+}
+  /* Circle image styling */
+  .circle-image {
+    width: 250px; 
+    height: 250px; 
+    border: 10px solid #cd2595; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 20px auto; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+
+  /* Styling the image inside the container */
+  .circle-image img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+  }
+
+  /* Hover effects for both container and image */
+  .circle-image:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  }
+
+  .circle-image:hover img {
+    transform: scale(1.1); 
+  }
+
+  /* Heading styling */
+  h2 {
+    font-size: 2em; 
+    text-align: center; 
+    color: #721556; 
+    font-family: 'Georgia', serif; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 2px; 
+    font-weight: 600; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+  }
+
+  /* Navigation button styling */
+  nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+  }
+
+  nav ul li {
+    display: inline-block; 
+  }
+
+  nav ul li img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s; 
+  }
+
+  nav ul li img:hover {
+    transform: scale(1.1); 
+  }
+
+  /* Social media icon styling */
+  .social-media-icons {
+    text-align: center; 
+    margin-top: 20px; 
+  }
+
+  .social-media-icons img {
+    width: 60px; 
+    margin-right: 10px; 
+  }
+
+  /* Body background for blue theme */
+  body {
+    background-color: #a3b0d9d0; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Page container for adding left and right padding */
+  .page-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #eaf4fc; 
+  }
+
+  /* Page heading styling */
+  .heading {
+    text-align: center;
+    font-size: 24px; 
+    color: #0b3a6d; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+  }
+
+  /* Gallery container with grid layout */
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 10px; 
+    padding: 10px 0; 
+    background-color: #eaf4fc; 
+  }
+
+  /* Individual gallery item */
+  .gallery {
+    border: 1px solid #aac3da; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #ffffff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover effect for gallery item */
+  .gallery:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  }
+
+  /* Image styling */
+  .gallery img {
+    width: 100%; 
+    height: 110px; 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+  }
+
+  /* Zoom effect on image hover */
+  .gallery img:hover {
+    transform: scale(1.1); 
+  }
+
+  /* Description text styling */
+  .desc {
+    padding: 8px;
+    text-align: center;
+    font-size: 12px; 
+    color: #333; 
+    background-color: #f9f9f9; 
+  }
+
+  /* Hover effect for description text */
+  .desc:hover {
+    color: #007bff; 
+    cursor: pointer; 
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .box {
+    float: left;
+    width: 45%; 
+    padding: 20px;
+    height: auto;
+    margin: 0 2.5%; 
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Blockqoute in family page*/
+  blockquote {
+    font-style: italic;
+    border-left: 4px solid #c4612c;
+    padding: 20px 40px;
+    margin: 20px auto;
+    background-color: #f2ebde;
+    font-size: 1.3em;
+    color: #333;
+    width: 80%;
+    box-sizing: border-box;
+  }
+
+  cite {
+    display: block;
+    text-align: right;
+    font-size: 1.1em;
+    color: #777;
+    margin-top: 10px;
+  }
+
+  
